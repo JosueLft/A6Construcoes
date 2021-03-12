@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
     </head>
     <body>
         <header>
@@ -30,32 +32,43 @@
 
             <div id="works" class="container content">
                 <div class="row">
-                    <h2>Nossos Trabalhos</h2>
+                    <h2>Alguns de nossos trabalhos</h2>
                     <hr>
                 </div>
 
-                <div class="row thumbnails text-center">
-                    <div class="col-md-12">
-                        <img src="lib/img/img1.jpg" alt="Construção">
+                <div class="row thumbnails text-center owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="lib/img/img1.jpg" alt="Construção">
+                        </div>
                     </div>
-                    <!-- <div class="col-md-12">
-                        <img src="lib/img/img2.jpg" alt="Construção">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="lib/img/img2.jpg" alt="Construção">
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                        <img src="lib/img/img3.png" alt="Construção">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="lib/img/img3.png" alt="Construção">
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                        <img src="lib/img/img4.jpeg" alt="Construção">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="lib/img/img4.jpeg" alt="Construção">
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                        <img src="lib/img/img5.jpg" alt="Construção">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="lib/img/img5.jpg" alt="Construção">
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                        <img src="lib/img/img6.jpg" alt="Construção">
-                    </div> -->
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="lib/img/img6.jpg" alt="Construção">
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
 
         <footer>
@@ -118,7 +131,28 @@
         </footer>
 
         <!-- Javascript -->
+        <script src="js/jquery.min.js"></script>
         <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/OwlCarousel/dist/owl.carousel.min.js"></script>
         <script src="https://kit.fontawesome.com/8d127811d6.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                var owl = $(".thumbnails");
+                owl.owlCarousel({
+                    items:1,
+                    loop:true,
+                    margin:20,
+                    autoplay:true,
+                    autoplayTimeout:1000,
+                    autoplayHoverPause:true
+                });
+                $('.play').on('click',function(){
+                    owl.trigger('play.owl.autoplay',[1000])
+                })
+                $('.stop').on('click',function(){
+                    owl.trigger('stop.owl.autoplay')
+                })
+            });
+        </script>
     </body>
 </html>

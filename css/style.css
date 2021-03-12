@@ -1,6 +1,7 @@
 /* Body */
 body {
     background-color: #000;
+    color: #003dad;
     padding: 0;
     margin: 0;
 }
@@ -63,21 +64,30 @@ section .content {
 #works h2 {
     font-size: 42px;
     font-family: "Akaya";
-    color: #FFF;
     font-weight: bold;
     text-align: center;
 }
 
 #works hr {
     border: #3e77e9 solid 2px;
-    width: 200px;
+    width: 400px;
     margin: 0 auto;
 }
 
-.thumbnails img {
-    width: 700px;
-    height: 500px;
+.thumbnails {
     margin-top: 20px;
+}
+
+.thumbnails img {
+    height: 500px;
+}
+
+#works .thumbnails .item-inner {
+    background-color: #000;
+}
+
+#works .thumbnails .item-inner img {
+    width: 100%;
 }
 /* Fim Conteudo */
 
@@ -130,8 +140,11 @@ footer .col-get-in-touch h4 {
 }
 /*fim informations */
 /* copyright */
+footer {
+    clear: both;
+}
 footer .row-copyright {
-    height: 60px;
+    height: auto;
     background-color: #0d55e4;
     border-top: #0d40e4 1px solid;
 }
