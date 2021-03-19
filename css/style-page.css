@@ -1,0 +1,11 @@
+body, .body {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.fix {
+    margin-top: 0px !important;
+    width: 100%;
+    background-color: #FFF;
+    border-bottom: #3e77e9 2px solid;
+}

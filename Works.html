@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/works.css">
         <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
     </head>
@@ -144,13 +145,9 @@
                     margin:20,
                     autoplay:true,
                     autoplayTimeout:1000,
-                    autoplayHoverPause:true
                 });
                 $('.play').on('click',function(){
                     owl.trigger('play.owl.autoplay',[1000])
-                })
-                $('.stop').on('click',function(){
-                    owl.trigger('stop.owl.autoplay')
                 })
             });
         </script>

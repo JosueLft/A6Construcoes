@@ -37,12 +37,11 @@ header .header-logo #logotipo {
 header #menu-top {
     background-color: #000;
     height: 50px;
-    border: red solid 1px;
 }
 header #menu-top ul li {
     display: inline-block;
     text-decoration: none;
-    padding-right: 25px;
+    padding-right: 5px;
     font-family: "Akaya";
 }
 
@@ -57,12 +56,14 @@ header #menu-top ul li {
 section {
     clear: both;
     height: auto;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 section .content {
-    border: #2467F2 solid 1px;
+    /*border: #2467F2 solid 1px;*/
     background-color: #FFF;
     clear: both;
+    max-width: 920px;
 }
 
 #works h2 {
@@ -73,11 +74,10 @@ section .content {
 }
 
 #works .divider-title {
-    border: #3e77e9 solid 2px;
+    /*border: #3e77e9 solid 2px;*/
     width: 400px;
     margin: 0 auto 25px;
     opacity: .9;
-    border: 2px solid #2467F2;
     border-radius: 0px 25px;
 }
 

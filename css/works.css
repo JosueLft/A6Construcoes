@@ -1,0 +1,15 @@
+.work-thumbnails {
+    margin-top: 20px;
+}
+
+.work-thumbnails img {
+    height: 500px;
+}
+
+#works .work-thumbnails .item-inner {
+    background-color: #000;
+}
+
+#works .work-thumbnails .item-inner img {
+    width: 100%;
+}
