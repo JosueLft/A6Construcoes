@@ -22,12 +22,11 @@
             </div>
             <div id="menu-top" class="container d-flex justify-content-center">
                 <ul class="menu-top">
-                    <li><a href="index2.html"><i class="fa fa-home menu-icons"></i>Home</a></li>
-                    <li><a href="#team"><i class="fa fa-users menu-icons"></i>Equipe</a></li>
-                    <li><a href="#history"><i class="fa fa-landmark menu-icons"></i>Nossa História</a></li>
-                    <li><a href="#work"><i class="fa fa-hiking menu-icons"></i>Trabalhos</a></li>
-                    <li><a href="#partners"><i class="fa fa-handshake menu-icons"></i>Parceiros</a></li>
-                    <li><a href="#contact"><i class="fa fa-id-card menu-icons"></i>Contato</a></li>
+                    <li class="home"><a href="index2.html"><i class="fa fa-home menu-icons"></i>Home</a></li>
+                    <li class="team"><a href="#team"><i class="fa fa-users menu-icons"></i>Equipe</a></li>
+                    <li class="history"><a href="#history"><i class="fa fa-landmark menu-icons"></i>Nossa História</a></li>
+                    <li class="work"><a href="#work"><i class="fa fa-hiking menu-icons"></i>Trabalhos</a></li>
+                    <li class="sac"><a href="#contact"><i class="fa fa-id-card menu-icons"></i>Contato</a></li>
                 </ul>
             </div>
         </header>
@@ -35,6 +34,9 @@
         <div class="body">
             <section id="index">
                 <div id="works" class="container content">
+                    <div class="topSectionIndex row">
+                        <h2>A6 Construções</h2>
+                    </div>
                     <div class="container panel-work-type">
                         <div class="col-md-4 container-min-img">
                             <img src="lib/img/min/lojas.png" alt="Trabalhamos com lojas">
@@ -115,7 +117,7 @@
 
             <section id="team">
                 <div class="container content">
-                    <div id="topSection" class="row">
+                    <div class="topSectionTeam row">
                         <h2>Equipe</h2>
                     </div>
                     <hr class="divider-title">
@@ -158,6 +160,9 @@
             <section id="history">
 
                 <div id="works" class="container content">
+                    <div class="topSectionHistory row">
+                        <h2>Nossa Historia</h2>
+                    </div>
                     <div class="row">
                         <h2>A6 Construções</h2>
                         <hr class="divider-title">
@@ -182,6 +187,9 @@
             <section id="work">
 
                 <div id="works" class="container content">
+                    <div class="topSectionWork row">
+                        <h2>Trabalhos</h2>
+                    </div>
                     <div class="row">
                         <h2>Alguns de nossos trabalhos</h2>
                         <hr class="divider-title">
@@ -225,6 +233,9 @@
             <section id="contact">
 
                 <div id="works" class="container content">
+                    <div class="topSectionSac row">
+                        <h2>SAC</h2>
+                    </div>
                     <div class="row">
                         <h2>Entre em contato</h2>
                         <hr class="divider-title">
@@ -326,15 +337,69 @@
                 })
             });
 
-            var offset = $("#topSection").offset().top;
-            var $meuMenu = $("#topSection");
+            var offsetIndex = $(".menu-top").offset().top;
+            var menu = $(".menu-top");
+            var home = $(".home");
+            var team = $(".team");
+            var history = $(".history");
+            var work = $(".work");
+            var sac = $(".sac");
+            
             $(document).on('scroll', function () {
-                if (offset <= $(window).scrollTop()) {
-                    $meuMenu.addClass("fixed-top");
-                    $meuMenu.addClass("fix");
+                if (offsetIndex <= $(window).scrollTop()) {
+                    menu.addClass("fixed-top");
+                    menu.addClass("fix");
+                    home.addClass("active");
                 } else {
-                    $meuMenu.removeClass("fixed-top");
-                    $meuMenu.removeClass("fix");
+                    menu.removeClass("fixed-top");
+                    menu.removeClass("fix");
+                    home.removeClass("active");
+                }
+            });
+
+            var offsetTeam = $(".topSectionTeam").offset().top;
+            $(document).on('scroll', function () {
+                if (offsetTeam <= $(window).scrollTop()) {
+                    team.addClass("active");
+                    home.removeClass("active");
+                } else {
+                    team.removeClass("active");
+                }
+            });
+
+            var offsetHistory = $(".topSectionHistory").offset().top;
+            $(document).on('scroll', function () {
+                if (offsetHistory <= $(window).scrollTop()) {
+                    history.addClass("active");
+                    team.removeClass("active");
+                } else {
+                    history.removeClass("active");
+                }
+            });
+
+            var offsetWork = $(".topSectionWork").offset().top;
+            $(document).on('scroll', function () {
+                if (offsetWork <= $(window).scrollTop()) {
+                    work.addClass("active");
+                    home.removeClass("active");
+                    team.removeClass("active");
+                    history.removeClass("active");
+                } else {
+                    work.removeClass("active");
+                }
+            });
+
+            var offsetSac = $(".topSectionSac").offset().top;
+            var $meuMenuSac = $(".topSectionSac");
+            $(document).on('scroll', function () {
+                if (offsetSac <= $(window).scrollTop()) {
+                    sac.addClass("active");
+                    home.removeClass("active");
+                    team.removeClass("active");
+                    history.removeClass("active");
+                    work.removeClass("active");
+                } else {
+                    sac.removeClass("active");
                 }
             });
         </script>
