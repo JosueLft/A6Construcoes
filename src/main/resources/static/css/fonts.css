@@ -1,5 +1,41 @@
 @font-face {
-    font-family: 'Akaya';
-    src: url("../lib/fonts/AkayaTelivigala-Regular.ttf");
+    font-family: 'LemonMilk-Regular';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-Regular.otf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'LemonMilk-RegularItalic';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-RegularItalic.otf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'LemonMilk-Medium';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-Medium.otf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'LemonMilk-MediumItalic';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-MediumItalic.otf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'LemonMilk-Light';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-Light.otf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'LemonMilk-Bold';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-Bold.otf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'LemonMilk-BoldItalic';
+    src: url("../lib/fonts/lemonmilk/LEMONMILK-BoldItalic.otf");
     font-size: 1em;
 }

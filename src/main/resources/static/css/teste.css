@@ -1,0 +1,62 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family: "LemonMilk-Regular";
+    background-image: url("../lib/img/background.png");
+    background-repeat: no-repeat;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background-position: 30% 45%;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(253, 116, 0, .9);
+    z-index: 3;
+}
+
+header .container {
+    position: relative;
+}
+
+header .logotipo {
+    position: absolute;
+}
+
+header .panel-top {
+    opacity: 0.9;
+}
+
+#logo-top {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#nav-menu-top {
+    top: 10px;
+    margin: 26px 0;
+}
+
+#nav-menu-top ul {
+    float: right;
+}
+
+#nav-menu-top li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#nav-menu-top li a {
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 25px;
+
+}
