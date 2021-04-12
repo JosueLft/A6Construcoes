@@ -4,20 +4,21 @@
 }
 
 body {
-    font-family: "LemonMilk-Regular";
     background-image: url("../lib/img/background.png");
     background-repeat: no-repeat;
-    display: table;
     width: 100%;
     height: 100vh;
-    background-position: 30% 45%;
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
-
+/* header */
 header {
+    font-family: "LemonMilk-Regular";
     width: 100%;
     height: 75px;
-    background-color: rgba(253, 116, 0, .9);
+    background-color: rgba(231, 233, 233, 0.9);
+    border-bottom: 1px solid #FD7400;
     z-index: 3;
 }
 
@@ -30,7 +31,8 @@ header .logotipo {
 }
 
 header .panel-top {
-    opacity: 0.9;
+    height: 75px;
+    z-index: 5;
 }
 
 #logo-top {
@@ -55,8 +57,209 @@ header .panel-top {
 }
 
 #nav-menu-top li a {
-    color: #FFF;
+    color: #FD7400;
     font-size: 16px;
     padding: 10px 25px;
-
+    text-decoration: none;
 }
+/* fim header */
+
+/* content body */
+section .content {
+    max-width: 920px;
+    clear: both;
+}
+.body-container{
+    margin-bottom: 30px;
+    padding-top: 110px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#history, #work, #sac {
+    margin: 25px 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.history-content, .works {
+    font-family: "Akaya";
+    position: relative;
+}
+
+h4 {
+    color: #28756C;
+    font-family: "LemonMilk-Regular";
+}
+
+.text-informations {
+    margin-left: 5px;
+    width: 450px;
+    float: left;
+}
+
+.history-image1 img{
+    width: 400px;
+    float: left;
+    padding: 0 5px;
+}
+
+/* Works */
+.works .work-thumbnails {
+    border: 1px solid #FD7400;
+}
+
+.thumbnails {
+    margin-top: 20px;
+}
+
+.thumbnails img {
+    height: 500px;
+}
+
+.work-thumbnails {
+    margin-top: 20px;
+}
+
+.work-thumbnails img {
+    height: 500px;
+}
+
+#works .work-thumbnails .item-inner {
+    background-color: #359B90;
+}
+
+#works .work-thumbnails .item-inner img {
+    width: 100vh;
+    height: 90vh;
+}
+/* fim content body */
+
+/* Active */
+a .active {
+    color:#28756C;
+    border-bottom: 2px solid #28756C;
+    padding: 15px 0;
+    margin: 0;
+}
+/* Fim Active */
+
+/* footer */
+footer {
+    margin-top: 30px;
+    padding: 0;
+}
+/* informations */
+footer .row-informations {
+    height: 200px;
+    background-color: #28756C;
+}
+
+footer .col-logo,
+footer .col-informations,
+footer .col-links,
+footer .col-social-media,
+footer .col-get-in-touch {
+    height: 180px;
+    float: left;
+}
+
+footer .col-logo {
+    margin-top: 25px;
+}
+
+footer .col-links h4,
+footer .col-social-media h4,
+footer .col-get-in-touch h4 {
+    padding-left: 15px;
+    margin-top: 20px;
+    font-family: "Akaya";
+    color: #FFF;
+    padding-bottom: 10px;
+    border-bottom: #242D37 1px solid;
+    margin-right: 25px;
+}
+
+.col-links .menu-footer li {
+    margin-bottom: 5px;
+}
+
+.col-social-media .social-media li{
+    display: inline-block;
+}
+
+.col-get-in-touch address {
+    margin: 0;
+}
+/*fim informations */
+/* copyright */
+footer {
+    clear: both;
+}
+footer .row-copyright {
+    height: auto;
+    background-color: #FD7400;
+    border-top: #0d40e4 1px solid;
+}
+
+footer .copyright {
+    margin: 0;
+    padding: 0;
+    font-family: "Akaya";
+    color: #FFF;
+    display: inline-block;
+    line-height: 65px;
+}
+
+footer .p2 {
+    float: right;
+}
+
+footer .logotipo {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+/* fim footer */
+
+/* icons & Links */
+a {
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social {
+    font-size: 40px;
+    color: #FFF;
+}
+
+.footer-menu-icons,
+.menu-icons {
+    padding-right: 10px;
+}
+
+.menu-top li a:hover,
+a:hover .menu-icons {
+    color:#000;
+    border-radius: 5px;
+    background-color: #2467F2;
+}
+
+a:hover .social {
+    color:#000;
+}
+
+.menu-footer a:hover,
+.menu-footer a:hover .footer-menu-icons {
+    color:#000;
+    border-radius: 5px;
+    border: 1px solid #2467F2;
+    background-color: #2467F2;
+    padding: 5px 2px;
+    margin: 0;
+}
+
+.col-get-in-touch a:hover, a:hover .footer-contact {
+    color: #000;
+}
+/*Fim icons */

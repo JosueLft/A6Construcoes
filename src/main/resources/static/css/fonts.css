@@ -1,4 +1,10 @@
 @font-face {
+    font-family: 'Akaya';
+    src: url("../lib/fonts/AkayaTelivigala-Regular.ttf");
+    font-size: 1em;
+}
+
+@font-face {
     font-family: 'LemonMilk-Regular';
     src: url("../lib/fonts/lemonmilk/LEMONMILK-Regular.otf");
     font-size: 1em;
