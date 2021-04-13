@@ -28,11 +28,11 @@ header .container {
 
 header .logotipo {
     position: absolute;
+    z-index: 3;
 }
 
 header .panel-top {
     height: 75px;
-    z-index: 5;
 }
 
 #logo-top {
@@ -40,15 +40,23 @@ header .panel-top {
     height: auto;
     max-width: 200px;
     max-height: 200px;
+    right: 0;
 }
 
-#nav-menu-top {
+
+/*#nav-menu-top {
     top: 10px;
     margin: 26px 0;
 }
+*/
 
-#nav-menu-top ul {
-    float: right;
+.container-fluid {
+    padding-top: 10px;
+}
+
+.menu-items {
+    text-decoration: none;
+    z-index: 4;
 }
 
 #nav-menu-top li {
@@ -57,10 +65,11 @@ header .panel-top {
 }
 
 #nav-menu-top li a {
-    color: #FD7400;
+    font-family: 'Akaya';
+    color: #359b90;
     font-size: 16px;
-    padding: 10px 25px;
     text-decoration: none;
+    margin-right: 25px;
 }
 /* fim header */
 
@@ -89,6 +98,8 @@ section .content {
 h4 {
     color: #28756C;
     font-family: "LemonMilk-Regular";
+    text-decoration: underline;
+    font-style: italic;
 }
 
 .text-informations {
@@ -132,6 +143,11 @@ h4 {
     width: 100vh;
     height: 90vh;
 }
+
+/* sac */
+.form-floating {
+    margin-bottom: 15px;
+}
 /* fim content body */
 
 /* Active */
@@ -145,7 +161,6 @@ a .active {
 
 /* footer */
 footer {
-    margin-top: 30px;
     padding: 0;
 }
 /* informations */

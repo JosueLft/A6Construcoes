@@ -2,27 +2,37 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width:device-width, initial-scale=1">
         <title>6A Construções</title>
         <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/teste.css">
+        <link rel="stylesheet" href="css/style-mobile.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="../static/lib/OwlCarousel/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="../static/lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="fixed-top">
             <div class="container logo-panel">
-                <a href="teste.html"><img id="logo-top" class="logotipo" src="../lib/img/logo-menor.png" alt="Logo 6AConstruções"></a>
+                <a href="/"><img id="logo-top" class="logotipo" src="../lib/img/logo-menor.png" alt="Logo 6AConstruções"></a>
             </div>
 
             <div class="container panel-top">
                 <div class="row">
-                    <nav id="nav-menu-top">
-                        <ul>
-                            <li><a href="#history" class="history"><i class="fa fa-landmark menu-icons"></i>6A Construções</a></li>
-                            <!--<li class="work"><a href="#work"><i class="fa fa-hiking menu-icons"></i>Trabalhos</a></li>-->
-                            <li><a href="#contact" class="sac"><i class="fa fa-id-card menu-icons"></i>Contato</a></li>
-                        </ul>
+                    <nav id="nav-menu-top" class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="menu-items"><i class="fas fa-bars"></i></span>
+                            </button>
+                            <div class="menu-items collapse navbar-collapse" id="navbarScroll">
+                                <ul class="menu-items navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item"><a href="#history" class="history"><i class="fa fa-landmark menu-icons"></i>6A Construções</a></li>
+                                    <!--<li class="nav-item"><a href="#work"><i class="fa fa-hiking menu-icons"></i>Trabalhos</a></li>-->
+                                    <li class="nav-item"><a href="#contact" class="sac"><i class="fa fa-id-card menu-icons"></i>Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -31,7 +41,7 @@
         <div class="body-container">
 
             <section id="history">
-                <div class="history-content container content">
+                <div class="text-center history-content container content">
                     <div class="col-md2 history-image1">
                         <img id="logotipo" src="../lib/img/empresa.jpg" alt="Predio da empresa">
                     </div>
@@ -89,7 +99,7 @@
             </section>-->
 
             <section id="sac">
-                <div class="sac content container">
+                <div class="text-center sac content container">
                     <h4 class="text-center">Entre em Contato</h4>
                     <form>
                         <div class="form-floating mb-3">
@@ -99,78 +109,76 @@
                         <div class="form-floating">
                             <input type="text" class="form-control" id="floatingName" placeholder="Nome">
                             <label for="floatingName">Informe seu Nome</label>
-                        </div><br>
+                        </div>
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Digite sua mensagem aqui!</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                       </form>
                 </div>
             </section>
-
-
-            <footer>
-                <div class="row-informations">
-                    <div class="container">
-                        <div class="col-md-2 col-logo text-center">
-                            <img class="logotipo" src="../lib/img/logo-menor.png" alt="Logo Construtora">
-                        </div>
-                        <div class="col-md-10 col-informations text-center">
-                            <div class="col-md-4 col-links">
-                                <h4>Links</h4>
-                                <div class="col-md-6 col-links">
-                                    <ul class="list-unstyled menu-footer">
-                                        <li><a href="History.html"><i class="fa fa-landmark footer-menu-icons"></i>6A Construções</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-links">
-                                    <ul class="list-unstyled menu-footer">
-                                        <li><a href="Contact.html"><i class="fa fa-id-card footer-menu-icons"></i>Contato</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-social-media text-center">
-                                <h4>Redes Sociais</h4>
-    
-                                <ul class="list-unstyled social-media text-center">
-                                    <li class="col-md-3"><a href="#"><i class="fab fa-instagram-square social"></i></a></li>
-                                    <li class="col-md-3"><a href="#"><i class="fab fa-twitter-square social"></i></a></li>
-                                    <li class="col-md-3"><a href="#"><i class="fab fa-facebook-square social"></i></a></li>
-                                </ul>
-                                <ul class="list-unstyled social-media text-center">
-                                    <li class="col-md-3"><a href="#"><i class="fas fa-envelope-square social"></i></a></li>
-                                    <li class="col-md-3"><a href="#"><i class="fa fa-phone-square-alt social"></i></a></li>
-                                    <li class="col-md-3"><a href="#"><i class="fab fa-whatsapp-square social"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 col-links col-get-in-touch">
-                                <h4>Localização</h4>
-    
-                                <address>
-                                    <a href="#"><i class="fa fa-map-marker footer-contact"></i>Pirapora do Bom Jesus - SP, 06550-000</a><br/>
-                                    &nbsp;&nbsp;
-                                    <a href="#">R. Cecília Meireles,95 - Jardim Bom Jesus</a><br/>
-                                </address>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row-copyright">
-                    <div class="container">
-                        <p class="copyright">Copyright © 6A Construções. All rights reserved.</p>
-                        <p class="copyright p2">Created by LoftySolutionsTI</p>
-                    </div>
-                </div>
-            </footer>
         </div>
+
+        <footer>
+            <div class="row-informations">
+                <div class="container">
+                    <div class="col-md-2 col-logo text-center d-none d-sm-block">
+                        <img class="logotipo" src="../lib/img/logo-menor.png" alt="Logo Construtora">
+                    </div>
+                    <div class="col-md-10 col-informations text-center">
+                        <div class="col-md-4 col-links d-none d-sm-block">
+                            <h4>Links</h4>
+                            <div class="col-md-6 col-links">
+                                <ul class="list-unstyled menu-footer">
+                                    <li><a href="History.html"><i class="fa fa-landmark footer-menu-icons"></i>6A Construções</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-links">
+                                <ul class="list-unstyled menu-footer">
+                                    <li><a href="Contact.html"><i class="fa fa-id-card footer-menu-icons"></i>Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-social-media text-center">
+                            <h4 class="d-none d-sm-block">Redes Sociais</h4>
+
+                            <ul class="list-unstyled social-media text-center">
+                                <li class="col-md-3"><a href="#"><i class="fab fa-instagram-square social"></i></a></li>
+                                <li class="col-md-3"><a href="#"><i class="fab fa-twitter-square social"></i></a></li>
+                                <li class="col-md-3"><a href="#"><i class="fab fa-facebook-square social"></i></a></li>
+                            </ul>
+                            <ul class="list-unstyled social-media text-center">
+                                <li class="col-md-3"><a href="#"><i class="fas fa-envelope-square social"></i></a></li>
+                                <li class="col-md-3"><a href="#"><i class="fa fa-phone-square-alt social"></i></a></li>
+                                <li class="col-md-3"><a href="#"><i class="fab fa-whatsapp-square social"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-links col-get-in-touch d-none d-sm-block">
+                            <h4>Localização</h4>
+
+                            <address>
+                                <a href="#"><i class="fa fa-map-marker footer-contact"></i>Pirapora do Bom Jesus - SP, 06550-000</a><br/>
+                                &nbsp;&nbsp;
+                                <a href="#">R. Cecília Meireles,95 - Jardim Bom Jesus</a><br/>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-copyright">
+                <div class="container copyright-mobile">
+                    <p class="copyright">Copyright © 6A Construções. All rights reserved.</p>
+                    <p class="copyright p2">Created by LoftySolutionsTI</p>
+                </div>
+            </div>
+        </footer>
 
         <script src="../static/js/jquery.min.js"></script>
         <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../static/lib/OwlCarousel/dist/owl.carousel.min.js"></script>-
+        <script src="../static/lib/OwlCarousel/dist/owl.carousel.min.js"></script>
         <script src="https://kit.fontawesome.com/8d127811d6.js" crossorigin="anonymous"></script>
-
         <script>
             var offsetHistory = $("#history").offset().top;
             var offsetSac = $("#sac").offset().top;
